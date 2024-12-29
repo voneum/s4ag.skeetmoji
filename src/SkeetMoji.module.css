@@ -1,0 +1,196 @@
+
+  
+/* Header styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* background-color: lightgray; */
+}
+
+/* Footer styling */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  /* background-color: lightgray; */
+}
+
+/* Body styling */
+.main {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  /* background-color: lightgray; */
+  min-height: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #0085ffaa;
+}
+
+/* .main > .mainHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size:clamp(1rem, 2.5vw, 1.5rem);
+  gap: 15px;
+  width: fit-content;
+  margin: auto;
+} */
+.main > .mainBody {
+  display: block;
+  box-sizing: border-box; /* Includes padding in the container's width/height */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 10;
+}
+.main > .parentDiv {
+  width: 500px;
+  height: 100%;
+  overflow: hidden;
+  /* border: 2px solid #ccc;
+  border-radius: 8px; */
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0.3;
+}
+.main > .parentDivRight {
+  width: 500px;
+  height: 100%;
+  overflow: hidden;
+  /* border: 2px solid #ccc;
+  border-radius: 8px; */
+  position: absolute;
+  top:0;
+  right: 0;
+  opacity: 0.3;
+}
+.textDiv {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    /* border: 1px solid #ddd;
+    border-radius: 4px; */
+    margin-bottom: 5px;
+    /* text-align: left; */
+    color:#ffffff;
+    filter: invert(77%) sepia(15%) saturate(2%) hue-rotate(356deg) brightness(110%) contrast(98%);
+}
+.divChartCard{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkgray;
+  border-style: inset;
+  border-radius: 5px;
+}
+
+/* Child elements */
+.divChartContainer {
+  height: 300px; /* Fixed height */
+  background-color: #dddddd55; /* For visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.divChartCardChild {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.divChartCardHeader {
+  text-align: center;
+  display: flex;
+  background: darkgray;
+}
+
+.divChartCardHeader > .child1{
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+}
+.divChartCardHeader > .child1{
+  
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.divChartCardHeader > .child2{
+  
+  justify-content: right;
+  align-items: center;
+  font-size: smaller;
+  font-weight: normal;
+}
+
+.divChartCardContent {
+  display: contents;
+}
+
+.bottom {
+  flex: 1;
+  background-color: #00cc77;
+}
+
+
+select{
+  font-size: large;
+}
+
+dialog {
+  color: #555;
+  margin:auto;
+  background: linear-gradient(135deg, #ccccffcc 0%, lightgray 25%, lightgray 75%, #ffcccccc 100%);
+}
+dialog::backdrop {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(200,200,200, 0.4),
+    rgba(200,200,200, 0.2) 5px,
+    rgba(200,200,200, 0.6) 5px,
+    rgba(200,200,200, 0.6) 50px
+  );
+}
+dialog>div {
+  margin: 20px
+}
+dialog>div>div,li {
+  margin-left: 10px
+}
+dialog>div>div,h1,h2 {
+  margin-bottom: 10px
+}
+  
+.rwrotate {
+  display: inline-block;
+  animation: spin 1s ease-in-out;;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg); /* 3 rotations */
+  }
+}
