@@ -1,4 +1,4 @@
-![](bluesky-skeetmoji.png "skeetmoji screen capture")  
+![](public/bluesky-skeetmoji.png "skeetmoji screen capture")  
 
 ## SkeetMoji
 
